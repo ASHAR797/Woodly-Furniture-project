@@ -6,23 +6,23 @@ let homeFour = document.querySelector("#home-four")
 // Home One page
 
 homeOne.addEventListener("click", function () {
-    window.location.href = "pages\homeOne\home1.html" ;
+    window.location.href = "index.html" ;
 });
 
 // Home Two page
 
 homeTwo.addEventListener("click", function () {
-    window.location.href = "home1.html";
+    window.location.href = "home2.html" ;
 });
 
 // Home Three page
 
 homeThree.addEventListener("click", function () {
-    window.location.href = "home1.html";
+    window.location.href = "home3.html";
 });
 
 // Home Four page
 
 homeFour.addEventListener("click", function () {
-    window.location.href = "home1.html";
+    window.location.href = "home4.html";
 });
