@@ -6,38 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woodly - About us</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="./utils.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
 <body>
-    <header class="header">
+    <header class="header flex align-center ">
         <div class="logo">
-            <img src="./home-One-assets/img-folder/logo.svg" alt="">
+            <img src="./assets/img-folder/logo.svg" alt="">
         </div>
-        <nav class="nav">
+        <div class="menu">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="nav flex justify-between align-center">
             <div>
-                <ul class="nav-ul flex">
-                    <li>Home</li>
+                <ul class="nav-ul flex ">
+                    <li class="dropdown">
+                        Home <i class="ri-arrow-down-s-line"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="home1.html">Home 1</a></li>
+                            <li><a href="home2.html">Home 2</a></li>
+                            <li><a href="home3.html">Home 3</a></li>
+                            <li><a href="home4.html">Home 4</a></li>
+                        </ul>
+                    </li>
                     <li>Shop</li>
                     <li>Features</li>
-                    <li>About Us</li>
-                    <li>Contact</li>
-                    <li>Blog</li>
+                    <li> <a href="about.html">About Us </a> </li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        Blog <i class="ri-arrow-down-s-line"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="home4.html">Single Post</a></li>
+                            <li><a href="home1.html">Archive</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <div class="nav-right-container">
-                <div>
+            <div class="nav-right-container flex justify-between align-center">
+                <div class="flex">
                     <i class="ri-search-line"></i>
                     <i class="ri-heart-3-line"></i>
                     <i class="ri-user-line"></i>
                 </div>
-                <div class="nav-inner-cart">
+                <div class="nav-inner-cart flex align-center justify-evenly">
                     <i class="ri-shopping-cart-line"></i>
-                    <div>
+                    <div class="nav-inner-cart-price">
                         <h4>Total</h4>
-                        <span>0.00$</span>
+                        <span>$210.00</span>
                     </div>
                 </div>
             </div>
@@ -48,6 +66,7 @@
         <div class="woodly-hero-container">
             <ul>
                 <li>Home</li>
+                <li> <i class="ri-arrow-right-s-line"></i>  </li>
                 <li>About us</li>
             </ul>
             <h1>About us</h1>
@@ -55,7 +74,7 @@
         <!-- Section - 1 -->
         <section class="sec-1">
               <div class="sec-1-first-container">
-                <img src="./home-One-assets/img-folder/pexels-karolina-grabowska-4968391.jpg" alt="">
+                <img src="./assets/img-folder/pexels-karolina-grabowska-4968391.jpg" alt="">
                <div>
                    <h2>About Our</h2>
                    <h2>Fantastic Shop</h2>
@@ -66,27 +85,22 @@
               <div class="sec-1-second-container">
                 <div class="sec-1-second-container-main">
                     <div>
-                        <div class="icon"></div>
+                        <div class="icon flex justify-center align-center "  ><i class="ri-truck-line"></i></div>
                         <h4>Free Shipping</h4>
                         <p>Get your order in 7-10 working days without any cost</p>
                     </div>
                     <div>
-                        <div class="icon"></div>
+                        <div class="icon flex justify-center align-center "  ><i class="ri-truck-line"></i></div>
                         <h4>Free Shipping</h4>
                         <p>Get your order in 7-10 working days without any cost</p>
                     </div>
                     <div>
-                        <div class="icon"></div>
+                        <div class="icon flex justify-center align-center "  ><i class="ri-truck-line"></i></div>
                         <h4>Free Shipping</h4>
                         <p>Get your order in 7-10 working days without any cost</p>
                     </div>
                     <div>
-                        <div class="icon"></div>
-                        <h4>Free Shipping</h4>
-                        <p>Get your order in 7-10 working days without any cost</p>
-                    </div>
-                    <div>
-                        <div class="icon"></div>
+                        <div class="icon flex justify-center align-center "  ><i class="ri-truck-line"></i></div>
                         <h4>Free Shipping</h4>
                         <p>Get your order in 7-10 working days without any cost</p>
                     </div>
@@ -94,7 +108,7 @@
               </div>
               <!-- Section - 3 -->
         <section class="sec-3 flex justify-center">
-            <div class="flex flex-column">
+            <div class="flex flex-column align-center">
                 <span>Top Month Sellers</span>
                 <h2>Solutions for Home. 50% OFF</h2>
                 <button>View Collection &#8594;</button>
@@ -107,7 +121,7 @@
                 <span>Latest Reviews</span>
             </div>
             <div class="silder-main-container">
-                <img src="./home-One-assets/img-folder/client-image@2x.svg" alt="">
+                <img src="./assets/img-folder/client-image@2x.svg" alt="">
                 <p>“There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     alteration in some form, by injected humour, or randomised words”</p>
                 <div>
@@ -118,25 +132,25 @@
         </section>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="footer">
+     <!-- Footer -->
+     <footer class="footer">
         <div class="footer-first-container">
-            <div class="footer-first-container-first-div">
+            <div class="footer-first-container-first-div flex flex-column">
                 <div>
-                    <img src="./home-One-assets/img-folder/Group-175821.svg" alt="">
+                    <img src="./assets/img-folder/Group-175821.svg" alt="">
                 </div>
                 <div>
                     <h3>Need Help?</h3>
                 </div>
-                <div class="">
+                <div class="flex flex-column">
                     <h2>+1-518-555-0163</h2>
                     <span> Sunday - Thrusday: 9.00am- 12.00pm </span>
                     <span> Friday: 11.00am- 12.00pm</span>
                     <span> Mail: name@domain.com</span>
                 </div>
             </div>
-            <div class="footer-first-container-second-div">
-                <ul class="">
+            <div class="footer-first-container-second-div flex">
+                <ul class="flex flex-column">
                     <h4>Account</h4>
                     <li>Dashboard</li>
                     <li>My Order</li>
@@ -144,7 +158,7 @@
                     <li>Return</li>
                     <li>Wishlist</li>
                 </ul>
-                <ul class="">
+                <ul class="flex flex-column">
                     <h4>Information</h4>
                     <li>Dashboard</li>
                     <li>My Order</li>
@@ -153,15 +167,19 @@
                     <li>Wishlist</li>
                 </ul>
             </div>
-            <div class="footer-first-container-third-div ">
-                <div>
+            <div class="footer-first-container-third-div flex flex-column">
+                <div class="flex flex-column">
                     <h3>Get Latest Update</h3>
                     <p>Sign up and get a voucher of worth Oreder $250.00</p>
-                    <input type="email" name="" id="">
+                    <div class="email-box flex ">
+                        <div class="message-icon"><i class="ri-mail-line"></i></div>
+                        <input type="email" name="" id="" placeholder="Email address">
+                        <div class="arrow-icon"><i class="ri-arrow-right-line"></i></div>
+                    </div>
                 </div>
                 <div>
                     <h3>Follow us</h3>
-                    <div class="social-media-links">
+                    <div class="social-media-links flex">
                         <div><i class="ri-twitter-fill"></i></div>
                         <div><i class="ri-facebook-line"></i></div>
                         <div><i class="ri-linkedin-box-fill"></i></div>

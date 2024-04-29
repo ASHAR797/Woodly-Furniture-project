@@ -79,7 +79,7 @@ header{
     gap: 10px !important;
 }
 
-.dropdown a {
+.nav a {
     color: black;
     text-decoration: none;
 }

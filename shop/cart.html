@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woodly - Conatct</title>
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="./utils.css">
+    <title>Woodly - Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../utils.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -15,7 +15,7 @@
 <body>
     <header class="header flex align-center ">
         <div class="logo">
-            <img src="./assets/img-folder/logo.svg" alt="">
+            <img src="../assets/img-folder/logo.svg" alt="">
         </div>
         <div class="menu">
             <i class="ri-menu-line"></i>
@@ -32,7 +32,29 @@
                             <li><a href="home4.html">Home 4</a></li>
                         </ul>
                     </li>
-                    <li>Shop</li>
+                    <li class="shop-dropdown">
+                        Shop <i class="ri-arrow-down-s-line"></i>
+                        <ul class="shop-dropdown-content shop-first-content">
+                            <h3>Shop pages</h3>
+                            <li><a href="home1.html">Sidebar filter</a></li>
+                            <li><a href="home2.html">Drop Panel Filter</a></li>
+                            <li><a href="home3.html">offcanvas Filter</a></li>
+                            <li><a href="home4.html">Product Archive</a></li>
+                        </ul>
+                        <ul class="shop-dropdown-content shop-second-content">
+                            <h3>Product Pages</h3>
+                            <li><a href="home1.html">Product Style one</a></li>
+                            <li><a href="home2.html">Product Style two</a></li>
+                            <li><a href="home3.html">Product Style three</a></li>
+                            <li><a href="home4.html">Product variable</a></li>
+                        </ul>
+                        <ul class="shop-dropdown-content shop-third-content">
+                            <h3>Other</h3>
+                            <li><a href="./shop/cart.html">Cart</a></li>
+                            <li><a href="./shop/cart.html">Checkout</a></li>
+                            <li><a href="./shop/login-form.html">My account</a></li>
+                        </ul>
+                    </li>
                     <li>Features</li>
                     <li> <a href="about.html">About Us </a> </li>
                     <li> <a href="contact.html">Contact</a></li>
@@ -66,70 +88,22 @@
         <div class="woodly-hero-container">
             <ul>
                 <li>Home</li>
-                <li> <i class="ri-arrow-right-s-line"></i>  </li>
-                <li>Contact</li>
+                <li><i class="ri-arrow-right-s-line"></i></li>
+                <li>Cart</li>
             </ul>
-            <h1>Contact</h1>
+            <h1>Cart</h1>
         </div>
         <!-- Section - 1 -->
         <section class="sec-1">
-           <div class="sec-1-left">
-            <div class="sec-1-left-first-container">
-                <h3>Showroom Information</h3>
-                <p>Business subject long poetic reclined catch bits generality involved.</p>
-            </div>
-            <div class="sec-1-left-second-container">
-                <ul>
-                    <h4>Address</h4>
-                    <li>3705 Clement Street</li>
-                    <li>City: Atlanta</li>
-                    <li>State: Georgia</li>
-                    <li>Zip : 30303 USA</li>
-                </ul>
-                <ul>
-                    <h4>Phone</h4>
-                    <li>202-555-0199</li>
-                    <li>mo – fri: 09:00 – 17:00</li>
-                </ul>
-                <ul>
-                    <h4>Email</h4>
-                    <li>hello@domain.com</li>
-                    <li>info@domain.com</li>
-                </ul>
-            </div>
-           </div>
-           <div class="sec-1-right">
-            <div>
-                <h3>Send us a Message</h3>
-                <p>Whether you’ve got product suggestions, pre-sale questions or even a good joke to start chatting, drop us a line via this contact form below.</p>
-            </div>
-            <form action="">
-                <div>
-                    <label for="">Your name</label>
-                <input type="text" placeholder="Ex: jhon Doe">
-            </div>
-            <div>
-                <label for="">Your Email</label>
-                <input type="text" placeholder="Ex: jhondoe@gmail.com">
-            </div>
-            <div>
-                <label for="">Subject</label>
-                <input type="text" placeholder="Type of Message Subject">
-            </div>
-            <div>
-                <label for="">Your Message</label>
-                <textarea name="" id="" cols="75" rows="10" placeholder="Enter message here"></textarea>
-            </div>
-        </form>
-        </div>
-    </section>
-    </main>
-    <!-- Footer -->
+           <div class="sec-1-cart-item">Your cart is currently empty.</div>
+           <div class="item-return">Return to shop</div>
+        </section>
+    </main> <!-- Footer -->
     <footer class="footer">
        <div class="footer-first-container">
            <div class="footer-first-container-first-div flex flex-column">
                <div>
-                   <img src="./assets/img-folder/Group-175821.svg" alt="">
+                   <img src="../assets/img-folder/Group-175821.svg" alt="">
                </div>
                <div>
                    <h3>Need Help?</h3>

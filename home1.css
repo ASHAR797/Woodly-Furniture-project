@@ -60,7 +60,6 @@ body {
 
 nav li {
     display: inline-block;
-    padding: 9px 0px;
 }
 
 .dropdown {
@@ -72,11 +71,11 @@ nav li {
     position: absolute;
     color: #B2BBB7;
     font-weight: 100;
-    top: 10px;
+    top: 4px;
 }
 .dropdown-content {
     position: absolute;
-    top: 30px;
+    top: 20px;
     font-family: 'icomoon-Font-family', sans-serif;
     background-color: #f1f1f1;
     min-width: 240px;
@@ -89,7 +88,7 @@ nav li {
     gap: 10px !important;
 }
 
-.dropdown a {
+nav a {
     color: black;
     text-decoration: none;
 }
@@ -98,6 +97,61 @@ nav li {
     display: flex;
     flex-direction: column;
 }
+
+
+
+.shop-dropdown {
+    position: relative;
+    display: flex;
+}
+.shop-dropdown i {
+    font-size: 17px;
+    position: absolute;
+    color: #B2BBB7;
+    font-weight: 100;
+    top: 4px;
+    left: 37px;
+}
+.shop-dropdown-content {
+    position: absolute;
+    top: 20px;
+    font-family: 'circular', sans-serif;
+    background-color: #f1f1f1;
+    min-width: 27.85rem;
+    padding: 12px 16px 12px 30px;
+    background-color: #EDFFF7;
+    text-align: left;
+    z-index: 1;
+    height: 18rem;
+    gap: 10px !important;
+    display: none ;
+}
+.shop-dropdown-content h3{
+    font-family: 'italic-Font-family', 'Helvetica Neue' ;
+    margin: 10px 0px;
+}
+.shop-first-content{
+    left: -20.8rem;
+    background-color: #EEFFF7;
+    padding: 40px 60px;
+}
+.shop-second-content {
+    left: 6.2rem;
+    background-color: #E1FEF1;
+    padding: 40px 60px;
+}
+.shop-third-content{
+    left: 33.2rem;
+    background-color: #EEFFF7;
+    padding: 40px 60px;
+}
+
+
+.shop-dropdown:hover .shop-dropdown-content {
+    display: flex !important;
+    flex-direction: column;
+}
+
 
 .nav-right-container {
     width: 29.3%;

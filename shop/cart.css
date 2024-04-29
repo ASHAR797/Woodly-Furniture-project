@@ -1,17 +1,18 @@
 @font-face {
     font-family: 'italic-Font-family';
-    src: url(./assets/font-folder/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.ttf);
+    src: url(../assets/font-folder/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.ttf);
 }
 
 @font-face {
     font-family: 'icomoon-Font-family';
-    src: url(./assets/font-folder/icomoon.ttf);
+    src: url(../assets/font-folder/icomoon.ttf);
 }
 
 @font-face {
     font-family: 'LibreBaskerville';
-    src: url(./assets/font-folder/LibreBaskerville-Regular.ttf);
+    src: url(../assets/font-folder/LibreBaskerville-Regular.ttf);
 }
+
 
 * {
     margin: 0;
@@ -32,19 +33,17 @@ body {
     background-color: transparent;
     gap: 50px;
     height: 4.55rem;
-    position: absolute;
     width: 92%;
+    position: absolute;
 }
 
 .header .logo {
     width: 15.25%;
     border-right: 1.7px solid #3C9581;
 }
-
-.header .menu {
+.header .menu{
     display: none;
 }
-
 .nav {
     width: 85.75%;
     height: 100%;
@@ -75,7 +74,6 @@ nav li {
     font-weight: 100;
     top: 4px;
 }
-
 .dropdown-content {
     position: absolute;
     top: 20px;
@@ -100,6 +98,61 @@ nav a {
     display: flex;
     flex-direction: column;
 }
+
+
+
+.shop-dropdown {
+    position: relative;
+    display: flex;
+}
+.shop-dropdown i {
+    font-size: 17px;
+    position: absolute;
+    color: #B2BBB7;
+    font-weight: 100;
+    top: 4px;
+    left: 37px;
+}
+.shop-dropdown-content {
+    position: absolute;
+    top: 20px;
+    font-family: 'circular', sans-serif;
+    background-color: #f1f1f1;
+    min-width: 27.85rem;
+    padding: 12px 16px 12px 30px;
+    background-color: #EDFFF7;
+    text-align: left;
+    z-index: 1;
+    height: 18rem;
+    gap: 10px !important;
+    display: none ;
+}
+.shop-dropdown-content h3{
+    font-family: 'italic-Font-family', 'Helvetica Neue' ;
+    margin: 10px 0px;
+}
+.shop-first-content{
+    left: -20.8rem;
+    background-color: #EEFFF7;
+    padding: 40px 60px;
+}
+.shop-second-content {
+    left: 6.2rem;
+    background-color: #E1FEF1;
+    padding: 40px 60px;
+}
+.shop-third-content{
+    left: 33.2rem;
+    background-color: #EEFFF7;
+    padding: 40px 60px;
+}
+
+
+.shop-dropdown:hover .shop-dropdown-content {
+    display: flex !important;
+    flex-direction: column;
+}
+
 
 .nav-right-container {
     width: 29.3%;
@@ -133,6 +186,7 @@ nav a {
 }
 
 
+
 .woodly-hero-container {
     display: flex;
     justify-content: end;
@@ -146,7 +200,7 @@ nav a {
 }
 
 .woodly-hero-container h1 {
-    font-size: 42px;
+    font-size: 52px;
     font-family: 'LibreBaskerville', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -161,112 +215,22 @@ nav a {
 
 .sec-1 {
     display: flex;
+    gap: 25px;
     padding: 9%;
     width: 100%;
-    gap: 80px;
-}
-
-.sec-1-left {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 25px 0px;
-}
-
-.sec-1-left-first-container h3 {
-    font-size: 32px;
-    margin: 10px 0px;
-    font-family: 'LibreBaskerville';
-    font-weight: 100;
-}
-
-.sec-1-left-first-container p {
-    font-family: 'circular';
-    color: #595757e7;
-}
-
-.sec-1-left-second-container {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-    width: 43.364%;
-}
-
-.sec-1-left-second-container ul {
-    list-style: none;
-    font-size: 18px;
-    gap: 10px;
-    display: flex;
     flex-direction: column;
 }
-
-.sec-1-left-second-container ul h4 {
-    color: #3C9581;
-    font-size: 22px;
-    font-family: 'italic-Font-family';
-    margin-bottom: 18px;
+.sec-1-cart-item{
+  padding: 15px  ;
+  font-size: 18px;
+  color: #3C9581;
+  background-color: #F3FCF8;
+  width: 100%;
+  font-family: 'circular';
 }
-
-.sec-1-left-second-container ul li {
-    font-family: 'circular';
-    color: #595757e7;
-    font-size: 16px;
-}
-
-.sec-1-right {
-    width: 61.86%;
-    padding: 30px 30px;
-    border: 1px solid #b2bbb7b0;
-    border-radius: 7px;
-}
-
-.sec-1-right h3 {
-    font-size: 26px;
-    margin: 10px 0px;
-    font-family: 'LibreBaskerville';
-    font-weight: 100;
-}
-
-.sec-1-right p {
-    color: #656565;
-    font-family: 'circular', Arial, Helvetica, sans-serif;
-}
-
-.sec-1-right label {
-    color: #656565;
-    font-family: 'circular', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 25px;
-}
-
-.sec-1-right input {
-    font-size: 16px;
-    padding: 15px;
-    border-radius: 7px;
-    border: 2px solid #3C9581;
-    background: #F3FCF8;
-    color: black;
-    outline: none;
-}
-
-.sec-1-right textarea {
-    outline: none;
-    max-width: 592px;
-    min-width: 560px;
-    font-size: 16px;
-    padding: 15px;
-    border-radius: 7px;
-    border: 2px solid #3C9581;
-    background: #F3FCF8;
-    font-family: 'circular', Arial, Helvetica, sans-serif;
-    color: black;
-    min-height: 330px;
-}
-
-.sec-1-right form div {
-    display: flex;
-    margin: 30px 0px;
-    flex-direction: column;
+.item-return{
+  font-size: 18px;
+  font-family: 'circular';
 }
 /* Footer */
 .footer-first-container {
