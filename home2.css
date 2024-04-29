@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'italic-Font-family';
-    src: url(./home-two-assets/font-folder/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.ttf);
+    src: url(./assets/font-folder/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.ttf);
 }
 
 @font-face {
     font-family: 'icomoon-Font-family';
-    src: url(./home-Two-Assets/font-folder/icomoon.ttf);
+    src: url(./assets/font-folder/icomoon.ttf);
 }
 
 @font-face {
     font-family: 'LibreBaskerville';
-    src: url(./home-Two-Assets/font-folder/LibreBaskerville-Regular.ttf);
+    src: url(./assets/font-folder/LibreBaskerville-Regular.ttf);
 }
 
 * {
@@ -41,6 +41,44 @@ body {
     list-style: none;
     gap: 25px;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown i {
+    font-size: 17px;
+    position: absolute;
+    color: #B2BBB7;
+    font-weight: 100;
+    top: 2px;
+}
+.dropdown-content {
+    position: absolute;
+    top: 20px;
+    font-family: 'icomoon-Font-family', sans-serif;
+    background-color: #f1f1f1;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px 12px 30px;
+    background-color: #EDFFF7;
+    text-align: left;
+    z-index: 1;
+    display: none;
+    list-style: none;
+    gap: 10px !important;
+}
+
+.dropdown a {
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .menu{
     display: none;
 }
@@ -384,7 +422,7 @@ body {
 .sec-5-main-container {
     height: 40rem;
     background-position: center;
-    background-image: url(home-Two-Assets/img-folder/Rectangle-8.jpg);
+    background-image: url(./assets/img-folder/Rectangle-8.jpg);
     border: 1px solid #ccc;
     background-size: 100% 100%;
     object-fit: cover;

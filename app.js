@@ -6,7 +6,7 @@ let homeFour = document.querySelector("#home-four")
 // Home One page
 
 homeOne.addEventListener("click", function () {
-    window.location.href = "index.html" ;
+    window.location.href = "home1.html" ;
 });
 
 // Home Two page
