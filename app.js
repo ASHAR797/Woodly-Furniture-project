@@ -12,7 +12,7 @@ homeOne.addEventListener("click", function () {
 // Home Two page
 
 homeTwo.addEventListener("click", function () {
-    window.location.href = "pages\homeOne\home1.html";
+    window.location.href = "homeOne\home1.html";
 });
 
 // Home Three page
