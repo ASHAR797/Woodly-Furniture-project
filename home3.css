@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'italic-Font-family';
-    src: url(./home-three-assets/font-folder/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.ttf);
+    src: url(./assets/font-folder/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.ttf);
 }
 
 @font-face {
     font-family: 'icomoon-Font-family';
-    src: url(./home-three-assets/font-folder/icomoon.ttf);
+    src: url(./assets/font-folder/icomoon.ttf);
 }
 
 @font-face {
     font-family: 'LibreBaskerville';
-    src: url(./home-three-assets/font-folder/LibreBaskerville-Regular.ttf);
+    src: url(./assets/font-folder/LibreBaskerville-Regular.ttf);
 }
 
 *{
@@ -29,6 +29,9 @@ box-sizing: border-box;
 body{
 height: 100%;
 width: 100%;
+}
+.menu{
+    display: none;
 }
 header{
   width: 100%;
@@ -102,7 +105,7 @@ header{
     width: 39.35%;
     border-radius: 15px;
     height: 100%;
-    background-image: url(./home-three-assets/img-folder/pexels-shirin-olyaei-2986011.jpg);
+    background-image: url(./assets/img-folder/pexels-shirin-olyaei-2986011.jpg);
     background-size: cover;
 }
 /* Section - 2 */
@@ -277,7 +280,7 @@ header{
     gap: 20px;
     background-repeat: no-repeat;
     width: 94.35%;
-    background-image: url(./home-three-assets/img-folder/pexels-pixabay-220749.jpg);
+    background-image: url(./assets/img-folder/pexels-pixabay-220749.jpg);
 }
 .sec-5-main-container h2{
     font-size: 40px;

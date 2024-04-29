@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'italic-Font-family';
-    src: url(./Home-four-Asset/font-folder/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.ttf);
+    src: url(./assets/font-folder/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.ttf);
 }
 
 @font-face {
     font-family: 'icomoon-Font-family';
-    src: url(./Home-four-Asset/font-folder/icomoon.ttf);
+    src: url(./assets/font-folder/icomoon.ttf);
 }
 
 @font-face {
     font-family: 'LibreBaskerville';
-    src: url(./Home-four-Asset/font-folder/LibreBaskerville-Regular.ttf);
+    src: url(./assets/font-folder/LibreBaskerville-Regular.ttf);
 }
 
 * {

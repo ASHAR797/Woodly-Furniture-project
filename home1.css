@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'icomoon-Font-family';
-    src: url(./home-One-assets/font-folder/icomoon.ttf);
+    src: url(./assets/font-folder/icomoon.ttf);
 }
 
 @font-face {
     font-family: 'LibreBaskerville';
-    src: url(./home-One-assets/font-folder/LibreBaskerville-Regular.ttf);
+    src: url(./assets/img-folder/);
 }
 
 * {
