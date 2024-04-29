@@ -12,17 +12,17 @@ homeOne.addEventListener("click", function () {
 // Home Two page
 
 homeTwo.addEventListener("click", function () {
-    window.location.href = "https://google.com";
+    window.location.href = "pages\homeOne\home1.html";
 });
 
 // Home Three page
 
 homeThree.addEventListener("click", function () {
-    window.location.href = "https://google.com";
+    window.location.href = "pages\homeOne\home1.html";
 });
 
 // Home Four page
 
 homeFour.addEventListener("click", function () {
-    window.location.href = "https://google.com";
+    window.location.href = "pages\homeOne\home1.html";
 });
