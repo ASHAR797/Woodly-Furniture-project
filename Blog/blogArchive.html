@@ -4,50 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>---</title>
+    <title>Archive</title>
     <link rel="stylesheet" href="bolgArchive.css">
+    <link rel="stylesheet" href="../utils.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 </head>
-
 <body>
-    <header class="header">
+    
+    <header class="header flex align-center ">
         <div class="logo">
-            <img src="./blogAsset/logo.svg" alt="">
+            <img src="../assets/img-folder/logo.svg" alt="">
         </div>
-        <nav class="nav">
+        <div class="menu">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="nav flex justify-between align-center">
             <div>
-                <ul class="nav-ul flex">
-                    <li>Home</li>
-                    <li>Shop</li>
+                <ul class="nav-ul flex ">
+                    <li class="dropdown">
+                        Home <i class="ri-arrow-down-s-line"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="../home1.html">Home 1</a></li>
+                            <li><a href="../home2.html">Home 2</a></li>
+                            <li><a href="../home3.html">Home 3</a></li>
+                            <li><a href="../home4.html">Home 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="shop-dropdown">
+                        Shop <i class="ri-arrow-down-s-line"></i>
+                        <ul class="shop-dropdown-content shop-first-content">
+                            <h3>Shop pages</h3>
+                            <li><a href="./shop/shopStyleone.html">Sidebar filter</a></li>
+                            <li><a href="./shop/shopStyletwo.html">Drop Panel Filter</a></li>
+                            <li><a href="./shop/shopStyletwo.html">offcanvas Filter</a></li>
+                            <li><a href="./shop/shopStyleone.html">Product Archive</a></li>
+                        </ul>
+                        <ul class="shop-dropdown-content shop-second-content">
+                            <h3>Product Pages</h3>
+                            <li><a href="../home1.html">Product Style one</a></li>
+                            <li><a href="../home2.html">Product Style two</a></li>
+                            <li><a href="../home3.html">Product Style three</a></li>
+                            <li><a href="../home4.html">Product variable</a></li>
+                        </ul>
+                        <ul class="shop-dropdown-content shop-third-content">
+                            <h3>Other</h3>
+                            <li><a href="./shop/cart.html">Cart</a></li>
+                            <li><a href="./shop/cart.html">Checkout</a></li>
+                            <li><a href="./shop/login-form.html">My account</a></li>
+                        </ul>
+                    </li>
                     <li>Features</li>
-                    <li>About Us</li>
-                    <li>Contact</li>
-                    <li>Blog</li>
+                    <li> <a href="../about.html">About Us </a> </li>
+                    <li> <a href="../contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        Blog <i class="ri-arrow-down-s-line"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="../home4.html">Single Post</a></li>
+                            <li><a href="../home1.html">Archive</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <div class="nav-right-container">
-                <div>
+            <div class="nav-right-container flex justify-between align-center">
+                <div class="flex">
                     <i class="ri-search-line"></i>
                     <i class="ri-heart-3-line"></i>
                     <i class="ri-user-line"></i>
                 </div>
-                <div class="nav-inner-cart">
+                <div class="nav-inner-cart flex align-center justify-evenly">
                     <i class="ri-shopping-cart-line"></i>
-                    <div>
+                    <div class="nav-inner-cart-price">
                         <h4>Total</h4>
-                        <span>0.00$</span>
+                        <span>$210.00</span>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- Woodly Main Content -->
-    <main>
+       <!-- Woodly Main Content -->
+       <main>
         <div class="woodly-hero-container">
             <ul>
                 <li>Home</li>
+                <li> <i class="ri-arrow-right-s-line"></i> </li>
                 <li>Blog</li>
             </ul>
             <h1>Blog</h1>
@@ -232,26 +272,25 @@
             </div>
             </div>
         </section>
-    </main>
-    <!-- Footer -->
+    </main><!-- Footer -->
     <footer class="footer">
         <div class="footer-first-container">
-            <div class="footer-first-container-first-div">
+            <div class="footer-first-container-first-div flex flex-column">
                 <div>
-                    <img src="./home-One-assets/img-folder/Group-175821.svg" alt="">
+                    <img src="../assets/img-folder/Group-175821.svg" alt="">
                 </div>
                 <div>
                     <h3>Need Help?</h3>
                 </div>
-                <div class="">
+                <div class="flex flex-column">
                     <h2>+1-518-555-0163</h2>
                     <span> Sunday - Thrusday: 9.00am- 12.00pm </span>
                     <span> Friday: 11.00am- 12.00pm</span>
                     <span> Mail: name@domain.com</span>
                 </div>
             </div>
-            <div class="footer-first-container-second-div">
-                <ul class="">
+            <div class="footer-first-container-second-div flex">
+                <ul class="flex flex-column">
                     <h4>Account</h4>
                     <li>Dashboard</li>
                     <li>My Order</li>
@@ -259,7 +298,7 @@
                     <li>Return</li>
                     <li>Wishlist</li>
                 </ul>
-                <ul class="">
+                <ul class="flex flex-column">
                     <h4>Information</h4>
                     <li>Dashboard</li>
                     <li>My Order</li>
@@ -268,15 +307,19 @@
                     <li>Wishlist</li>
                 </ul>
             </div>
-            <div class="footer-first-container-third-div ">
-                <div>
+            <div class="footer-first-container-third-div flex flex-column">
+                <div class="flex flex-column">
                     <h3>Get Latest Update</h3>
                     <p>Sign up and get a voucher of worth Oreder $250.00</p>
-                    <input type="email" name="" id="">
+                    <div class="email-box flex ">
+                        <div class="message-icon"><i class="ri-mail-line"></i></div>
+                        <input type="email" name="" id="" placeholder="Email address">
+                        <div class="arrow-icon"><i class="ri-arrow-right-line"></i></div>
+                    </div>
                 </div>
                 <div>
                     <h3>Follow us</h3>
-                    <div class="social-media-links">
+                    <div class="social-media-links flex">
                         <div><i class="ri-twitter-fill"></i></div>
                         <div><i class="ri-facebook-line"></i></div>
                         <div><i class="ri-linkedin-box-fill"></i></div>
