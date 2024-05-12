@@ -12,6 +12,10 @@
     font-family: 'LibreBaskerville';
     src: url(./assets/font-folder/LibreBaskerville-Regular.ttf);
 }
+@font-face {
+    font-family: 'DM-sans';
+    src: url(./assets/font-folder/DMSans_24pt-Regular.ttf);
+}
 
 * {
     margin: 0;
@@ -34,7 +38,7 @@ body {
 
 .nav {
     width: 83%;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
 }
 
 .nav-ul {
@@ -56,7 +60,7 @@ body {
 .dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 240px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -95,7 +99,7 @@ body {
 .shop-dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'circular', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 27.85rem;
     padding: 12px 16px 12px 30px;
@@ -144,6 +148,12 @@ body {
     font-size: 22px;
     margin-right: 35px;
 }
+.social-icons i:hover{
+    transition: 0.3s ease;
+}
+.social-icons i:hover{
+    color: #3C9581;
+}
 
 /* Section - 1 */
 
@@ -154,7 +164,7 @@ body {
 .swiper {
     width: 100%;
     height: 100%;
-    background-color: #F8F8F8;
+    background-image: url(https://woodly.ecom.themepreview.xyz/home02/wp-content/uploads/sites/3/2023/07/hero-1.png);
     overflow: hidden;
 }
 
@@ -188,11 +198,11 @@ body {
         align-items: baseline;
         gap: 25px;
         margin-top: 100px;
-        left: -41% !important;
+        left: -57% !important;
 }
 
 .swiper-slide-main-container .modern-furniture-text {
-    left: 44% !important;
+    left: 35% !important;
     position: relative;
     text-align: right;
     display: flex;
@@ -203,7 +213,7 @@ body {
 
 .swiper-slide img {
     display: block;
-    width: 75%;
+    width: 95%;
     object-fit: cover;
     position: relative;
     left: 186px;
@@ -214,6 +224,7 @@ body {
     font-size: 72px;
     font-family: 'LibreBaskerville', sans-serif;
     font-weight: 100;
+    width: 99%;
 }
 
 .heading-span {
@@ -233,6 +244,7 @@ body {
 
 .swiper-slide span {
     font-size: 32px;
+    color: #3C9581;
 }
 
 /* Section - 2 */
@@ -295,7 +307,7 @@ body {
 
 .sec-3-first-div {
     width: 33%;
-    gap: 30px;
+    gap: 25px;
 }
 
 .sec-3-product-card {
@@ -307,25 +319,23 @@ body {
     font-size: 36px;
     font-family: 'LibreBaskerville', sans-serif;
     font-weight: 100;
-    margin: 10px 0px;
 }
 
 .sec-3 div h2>span {
     color: #3C9581;
 }
 
+.sec-3 div:nth-child(1)>span {
+    font-size: 22px;
+    color: #101010ba;
+    font-family: 'italic-Font-family';
+}
 .sec-3 div>span {
-    color: black;
+    font-size: 12px;
+    color: #101010ba;
+    font-family: 'DM-sans' , sans-serif ;
 }
 
-.ri-arrow-right-s-line {
-    font-size: 19px;
-    height: 20px;
-    display: block;
-    width: 20px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
 
 .sec-3 div>p {
     color: #1F2826;
@@ -356,12 +366,13 @@ body {
     gap: 5px;
 }
 
-.sec-3-main-container .price del {
+.sec-3-main-container  del {
     font-size: 18px;
+    text-decoration: none;
     color: #3C9581;
 }
 
-.sec-3-main-container .price ins {
+.sec-3-main-container  ins {
     font-size: 18px;
     text-decoration: none;
     color: grey;
@@ -379,11 +390,11 @@ body {
 }
 
 .sec-3-product-card div:nth-child(2) {
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
 }
 
 .sec-3-product-card .rating {
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     font-size: 15px;
 }
 
@@ -405,7 +416,9 @@ body {
 }
 
 .sec-4 div>span {
-    color: black;
+    color: #101010ba;
+    font-size: 22px ;
+    line-height: 31px;
 }
 
 .sec-4 div>p {
@@ -419,12 +432,15 @@ body {
 
 .ri-arrow-right-s-line {
     font-size: 19px;
-    height: 20px;
+    height: 22px;
     display: block;
-    width: 20px;
-    margin-top: 30px;
-    border: 1px solid black;
+    width: 22px;
+    border: 2px solid ;
     border-radius: 50%;
+    transition: 0.3s linear;
+}
+.ri-arrow-right-s-line:hover{
+    color: #3C9581;
 }
 
 .sec-4-main-container {
@@ -448,7 +464,7 @@ body {
 }
 
 .sec-4-first-container div img {
-    width: 108%;
+    width: 100%;
     border-radius: 5px;
     position: relative;
     left: -50px;
@@ -478,7 +494,7 @@ body {
 .sec-5-main-container {
     height: 40rem;
     background-position: center;
-    background-image: url(./assets/img-folder/Rectangle-8.jpg);
+    background-image: url(https://woodly.ecom.themepreview.xyz/home02/wp-content/uploads/sites/3/2023/07/Rectangle-8.jpg);
     border: 1px solid #ccc;
     background-size: 100% 100%;
     object-fit: cover;
@@ -549,7 +565,7 @@ body {
 }
 
 .sec-6 div h2 {
-    font-size: 36px;
+    font-size: 42px;
     font-family: 'LibreBaskerville', sans-serif;
     font-weight: 100;
     margin: 10px 0px;
@@ -563,7 +579,7 @@ body {
     list-style: none;
     gap: 30px;
     font-size: 26px;
-    font-family: 'LibreBaskerville';
+    font-family: 'DM-sans';
 }
 
 .sec-6-main-container div:nth-child(1) ul>li:nth-child(1) {
@@ -582,9 +598,9 @@ body {
     gap: 20px;
 }
 
-.sec-6-product-card img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.sec-6-product-card img {  
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .sec-6-product-card button {
@@ -592,9 +608,10 @@ body {
     font-size: 16px;
     border: none;
     background-color: #3C9581;
+    font-family: "DM-sans" ,  sans-serif;
     color: white;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .sec-6-product-card-text {
@@ -612,18 +629,20 @@ body {
 .sec-6-product-card ins {
     color: #3C9581;
     text-decoration: none;
+    font-family: 'DM-sans' , sans-serif;
 }
 
 .sec-6-product-card del {
     color: grey;
     margin-right: 7px;
+    font-family: 'DM-sans' , sans-serif ;
 }
 
 /* Section - 7 */
 .sec-7 {
     text-align: center;
-    padding: 1% 0px;
-    margin: 10% 0px;
+    padding: 5% 0px;
+    background-color: #ffffff;
 }
 
 .sec-7 h2 {
@@ -634,7 +653,15 @@ body {
     margin: 11px 0px;
     color: #3C9581;
 }
-
+.sec-7-slider-main{
+ gap: 65px;
+ width: 65rem;
+}
+.sec-7-slider-main i{
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
 .sec-7 span {
     margin: 5px 0px;
 }
@@ -660,22 +687,24 @@ body {
 }
 
 .silder-main-container h3 {
-    font-family: 'circular';
     margin: 10px;
+    font-family: 'DM-sans' , sans-serif ;
     color: #3C9581;
+    font-weight: 100 ;
 }
 
 .silder-main-container span {
-    font-family: 'circular';
+    font-family: 'DM-sans' , sans-serif ;
     font-weight: 100;
+    color: #1F2826 ;
 }
 
 /* Footer */
 .footer-first-container {
-    padding: 10% 5.6%;
+    padding: 9.1% 5.6%;
     display: flex;
     justify-content: space-between;
-    background: black;
+    background: #101010;
     color: white;
 }
 
@@ -686,14 +715,13 @@ body {
 
 .footer-first-container-first-div p {
     padding: 20px 0px;
-    font-family: 'LibreBaskerville';
+    font-family: 'DM-sans' , sans-serif ;
     font-size: 15px;
     line-height: 22px;
 }
 
 .footer-first-container-first-div h3 {
     color: #FFFFFF;
-    font-family: "LibreBaskerville", Sans-serif;
     font-size: 26px;
     font-weight: 400;
     font-style: italic;
@@ -721,7 +749,7 @@ body {
     line-height: 34px;
     color: grey;
     font-weight: bold;
-    font-family: 'circular';
+    font-family: 'DM-sans' ,  sans-serif ;
 }
 
 .footer-first-container-second-div {
@@ -735,8 +763,7 @@ body {
 .footer-first-container-second-div ul {
     list-style: none;
     gap: 20px;
-    font-family: 'LibreBaskerville';
-    font-style: italic;
+    font-family: 'DM-sans' ,  sans-serif ;
     font-size: 16px;
 }
 
@@ -755,14 +782,14 @@ body {
 
 .footer-first-container-third-div h3 {
     font-size: 22px;
-    font-family: 'italic-Font-family';
+    font-family: 'DM-sans' ,  sans-serif;
 }
 
 .footer-first-container-third-div p {
     font-size: 17px;
     width: 75%;
     line-height: 27px;
-    font-family: 'circular';
+    font-family: 'DM-sans' , sans-serif ;
 }
 
 .footer-first-container-third-div input {

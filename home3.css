@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'icomoon-Font-family';
-    src: url(./assets/font-folder/icomoon.ttf);
+    font-family: 'DM-sans';
+    src: url(./assets/font-folder/DMSans_24pt-Regular.ttf);
 }
 
 @font-face {
@@ -49,7 +49,7 @@ header{
     gap: 25px;
     font-size: 16px;
     color: #5a605e;
-    font-family: 'icomoon-Font-family' ,sans-serif;
+    font-family: 'DM-sans' ,sans-serif;
 }
 
 .dropdown {
@@ -66,7 +66,7 @@ header{
 .dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 240px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -106,7 +106,7 @@ header{
 .shop-dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'circular', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 27.85rem;
     padding: 12px 16px 12px 30px;
@@ -128,12 +128,12 @@ header{
     padding: 40px 60px;
 }
 .shop-second-content {
-    left: 24.43rem;
+    left: 24.40rem;
     background-color: #E1FEF1;
     padding: 40px 60px;
 }
 .shop-third-content {
-    left: 52.3rem;
+    left: 52rem;
     background-color: #EEFFF7;
     padding: 40px 60px;
 }
@@ -169,7 +169,7 @@ header{
 }
 .sec-1 p{
     color: #FFFFFFC7;
-    font-family: "icomoon-Font-family", Sans-serif;
+    font-family: "DM-sans", Sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.35em;

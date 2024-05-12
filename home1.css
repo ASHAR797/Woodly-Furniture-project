@@ -12,6 +12,10 @@
     font-family: 'LibreBaskerville';
     src: url(./assets/font-folder/LibreBaskerville-Regular.ttf);
 }
+@font-face {
+    font-family: 'DM-sans';
+    src: url(./assets/font-folder/DMSans_24pt-Regular.ttf);
+}
 
 
 * {
@@ -27,8 +31,13 @@ body {
 }
 
 .header {
-    margin: 37px 58px;
-    border: 1.7px solid #3C9581;
+    margin: 37px 4.15%;
+    position: sticky;
+    top: 33px;
+    z-index: 1;
+    background-color: #F3FCF8 !important;
+    width: 92%;
+    border: 1.5px solid #3C9581;
     padding: 0px 0px 0px 15px;
     border-radius: 7px;
     background-color: transparent;
@@ -54,7 +63,7 @@ body {
     gap: 37px;
     list-style: none;
     font-size: 16px;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     font-weight: 100;
 }
 
@@ -76,7 +85,7 @@ nav li {
 .dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 240px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -100,7 +109,7 @@ nav a {
 
 
 
-.shop-dropdown {
+.shop-dropdown{
     position: relative;
     display: flex;
 }
@@ -115,7 +124,7 @@ nav a {
 .shop-dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'circular', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 27.85rem;
     padding: 12px 16px 12px 30px;
@@ -147,11 +156,28 @@ nav a {
 }
 
 
-.shop-dropdown:hover .shop-dropdown-content {
+.shop-dropdown:hover .shop-dropdown-content{
     display: flex !important;
     flex-direction: column;
 }
-
+.shop-dropdown > i{
+    transition: 0.2s;
+}
+.shop-dropdown:hover.shop-dropdown > i{
+    rotate: 180deg ;
+}  
+.dropdown > i{
+    transition: 0.2s;
+}
+.dropdown:hover.dropdown > i{
+    rotate: 180deg ;
+}  
+.header .nav-right-container div:nth-child(1) >  i:hover{
+ color: #3C9581;
+}
+.header .nav-right-container div:nth-child(2) > i:hover{
+    color: #CDC79F;
+}
 
 .nav-right-container {
     width: 29.3%;
@@ -180,7 +206,7 @@ nav a {
 }
 
 .nav-inner-cart-price {
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     font-weight: 100;
 }
 
@@ -214,9 +240,10 @@ nav a {
 }
 
 .sec-1 div button {
-    padding: 10px 12.75px;
-    border-radius: 50%;
-    font-size: 30px;
+    padding: .5em;
+    font-size: 20px;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 50% 50% 50% 50%;
     color: #3C9581;
     border: 2px solid;
     background-color: transparent;
@@ -293,24 +320,30 @@ nav a {
 
 .heading-span {
     color: #1F2826;
-    font-family: "LibreBaskerville", Sans-serif;
+    font-family: "italic-Font-family", Sans-serif;
     font-size: 22px;
     font-weight: 400;
     font-style: italic;
     line-height: 30px;
 }
+.sec-2 .heading-span {
+    font-family: 'italic-Font-family' , sans-serif;
+}
 
 .sec-2-ul {
     list-style: none;
     gap: 39px;
-    font-size: 19px;
-    font-family: 'circular';
+    font-size: 16px;
+    font-family: 'DM-sans';
     color: #505050;
 }
 
 .sec-2-ul li:nth-child(1) {
     border-bottom: 2px solid;
     padding: 2px;
+}
+.sec-2-ul li:hover{
+    border-bottom: 2px solid;
 }
 
 .sec-2-first-container {
@@ -357,17 +390,22 @@ nav a {
 }
 
 .sec-2-product del {
+    font-family: "LibreBaskerville", Sans-serif;
     color: grey;
     margin-right: 4px;
+    font-size: 16px;
 }
 
 .sec-2-product ins {
+    font-size: 16px;
+    font-family: "LibreBaskerville", Sans-serif;
     color: #3C9581;
+    text-decoration: none;
 }
 
 /* Section - 3 */
 .sec-3 {
-    padding: 13% 0px;
+    padding: 10% 0px;
     text-align: center;
     background-image: url(./assets/img-folder/image-10-1.png);
     background-size: 131% 100%;
@@ -389,7 +427,7 @@ nav a {
     line-height: 87px;
     font-family: 'LibreBaskerville', sans-serif;
     padding: 0px 10%;
-    font-weight: 100;
+    font-weight: 900;
 }
 
 .sec-3 div button {
@@ -398,8 +436,12 @@ nav a {
     background: transparent;
     border: 2px solid white;
     color: white;
+    transition: 0.3s linear;
 }
-
+.sec-3 div button:hover{
+    border: 2px solid #3C9581;
+    background-color: #3C9581;
+}
 /* Section - 4 */
 .sec-4 {
     padding: 10% 0px;
@@ -423,6 +465,7 @@ nav a {
     font-size: 42px;
     font-family: 'LibreBaskerville';
     line-height: 57px;
+    font-weight: 100 ;
     color: #3C9581;
 }
 
@@ -430,12 +473,22 @@ nav a {
     border-bottom: 2px solid;
     width: fit-content;
     font-size: 18px;
+    font-family: "italic-Font-family";
 }
 
 .sec-4-product-price img {
     width: 45%;
     height: 100%;
     object-fit: cover;
+}
+.sec-4-product-price del{
+    font-family: 'LibreBaskerville', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #dddee3;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-right: 7px;
 }
 
 .sec-4-product-price h3 {
@@ -452,7 +505,8 @@ nav a {
 }
 
 .sec-4-product-price>div span {
-    font-family: 'circular';
+    font-family:'DM-sans' , sans-serif;
+    padding-bottom: 7px;
     color: grey;
     border: none;
 }
@@ -475,6 +529,7 @@ nav a {
 .sec-5 {
     width: 100%;
     padding: 5% 0px;
+    background-color: #ffffff;
 }
 
 .sec-5-main-container {
@@ -487,15 +542,18 @@ nav a {
     font-size: 44px;
     font-family: 'LibreBaskerville';
     padding: 0px 31%;
+    font-weight: 100;
     line-height: 70px;
     color: #3C9581;
 }
 
 .sec-5-main-container p {
-    font-size: 22px;
+    font-size: 20px;
     padding: 0px 20%;
-    font-family: 'circular';
-    color: #5c5959;
+    font-family: 'DM-sans' , sans-serif;
+    color: #1f2826;
+    line-height: 32px;
+    margin-top: 10px;
 }
 
 .sec-5-main-container div:nth-child(1) {
@@ -512,6 +570,7 @@ nav a {
 .sec-6 {
     text-align: center;
     padding: 5% 0px;
+    background-color: #ffffff;
 }
 
 .sec-6 h2 {
@@ -522,7 +581,15 @@ nav a {
     margin: 11px 0px;
     color: #3C9581;
 }
-
+.sec-6-slider-main{
+ gap: 65px;
+ width: 65rem;
+}
+.sec-6-slider-main i{
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
 .sec-6 span {
     margin: 5px 0px;
 }
@@ -548,26 +615,30 @@ nav a {
 }
 
 .silder-main-container h3 {
-    font-family: 'circular';
     margin: 10px;
+    font-family: 'DM-sans' , sans-serif ;
     color: #3C9581;
+    font-weight: 100 ;
 }
 
 .silder-main-container span {
-    font-family: 'circular';
+    font-family: 'DM-sans' , sans-serif ;
     font-weight: 100;
+    color: #1F2826 ;
 }
 
 /* Section - 7 */
 
 .sec-7 {
-    padding: 5% 0px;
+    padding: 7% 0px;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .sec-7-main-container {
     width: 92%;
     text-align: left;
+    margin-top: 20px;
 }
 
 .sec-7 h2 {
@@ -595,7 +666,10 @@ nav a {
     font-size: 18px;
     font-family: 'italic-Font-family';
 }
-
+.sec-7-card a:hover{
+    color: #3C9581 ;
+    border-bottom: 1px solid #000 ;
+}
 .sec-7-card span {
     margin-top: -3px;
     padding: 0px 0px 10px;
@@ -617,8 +691,8 @@ nav a {
 }
 
 .sec-7-card p {
-    color: #1F2826;
-    font-family: 'circular';
+    color: #1f2826;
+    font-family: 'DM-sans' ,  sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -629,7 +703,7 @@ nav a {
     width: 100%;
     height: 63%;
     object-fit: cover;
-    border-radius: 8px
+    border-radius: 6px
 }
 
 .sec-7-card-text {
@@ -638,15 +712,15 @@ nav a {
 
 /* Footer */
 .footer-first-container {
-    padding: 5% 5.6%;
+    padding: 8.4% 5.6%;
     display: flex;
     justify-content: space-between;
-    background: black;
+    background: #101010;
     color: white;
 }
 
 .footer-first-container-first-div {
-    gap: 45px;
+    gap: 12px
 }
 
 .footer-first-container-first-div h3 {
@@ -659,11 +733,12 @@ nav a {
 }
 
 .footer-first-container-first-div h2 {
-    font-size: 42px;
-    font-family: 'circular';
-    font-weight: 100;
+    font-size: 36px;
+    font-family: 'DM-sans';
+    font-weight: 500;
     padding: 10px 0px;
     color: #3C9581;
+    line-height: 50px;
 }
 
 .footer-first-container-first-div img {
@@ -677,26 +752,33 @@ nav a {
     font-weight: bold;
     font-family: 'circular';
 }
+.footer-first-container-first-div > div:nth-child(1){
+    margin-bottom: 32px;
+}
 
 .footer-first-container-second-div {
-    gap: 139px
+    gap: 120px
 }
 
 .footer-first-container-second-div h4 {
     font-size: 22px;
+    font-family:"LibreBaskerville", Sans-serif ;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .footer-first-container-second-div ul {
     list-style: none;
     gap: 20px;
-    font-family: 'LibreBaskerville';
-    font-style: italic;
+    font-family: 'DM-sans';
     font-size: 16px;
 }
 
-.footer-first-container-third-div,
+.footer-first-container-third-div{
+    gap: 40px ;
+}
 .footer-first-container-third-div>div {
-    gap: 25px;
+    gap: 17px;
 }
 
 .footer-first-container-third-div {
@@ -725,6 +807,9 @@ nav a {
 
 .email-box {
     position: relative;
+}
+.footer-first-container-third-div input button:hover{
+    background-color: #318573;
 }
 
 .email-box input {
@@ -758,20 +843,25 @@ nav a {
     margin-top: 15px;
     gap: 20px;
 }
-
+.social-media-links i:hover{
+    background-color:  #3C9581 ;
+}
 .social-media-links i {
     padding: 10px;
+    transition: 0.3s ease-in;
     background-color: #232323;
     border-radius: 50%;
+    font-size: 16px;
 }
 
 .footer-second-container {
     text-align: center;
-    padding: 10px 0px;
-    font-size: 18px;
-    font-family: 'circular', sans-serif;
+    line-height: 16px;
+    color: #bebebe ;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'DM-sans', sans-serif;
     background: #282828;
-    color: white;
 }
 
 @media (max-width:767px) {
