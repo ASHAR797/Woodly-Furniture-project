@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'icomoon-Font-family';
-    src: url(./assets/font-folder/icomoon.ttf);
+    font-family: 'DM-sans';
+    src: url(./assets/font-folder/DMSans_24pt-Regular.ttf);
 }
 
 @font-face {
@@ -37,7 +37,7 @@ body {
 .nav-ul {
     color: #545B5A;
     list-style: none;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     gap: 38px;
 }
 .dropdown {
@@ -55,7 +55,7 @@ body {
 .dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 240px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -63,11 +63,13 @@ body {
     background-color: #EDFFF7;
     text-align: left;
     z-index: 1;
-    list-style: none;
     display: none;
+    list-style: none;
     gap: 10px;
 }
-
+.shop-dropdown-content li{
+    list-style: none;
+}
 .nav a {
     color: black;
     text-decoration: none;
@@ -95,7 +97,7 @@ body {
 .shop-dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'circular', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 27.85rem;
     padding: 12px 16px 12px 30px;
@@ -229,7 +231,7 @@ body {
 
 /* Section - 2 */
 .sec-2 {
-    padding: 7% 0px;
+    padding: 7% 0px 6% 0px;
     text-align: center;
     gap: 40px;
 }
@@ -294,9 +296,15 @@ body {
     font-size: 20px;
     padding: 12px 53px;
     background: transparent;
-    font-family: 'icomoon-Font-family';
+    border: 2px solid ;
+    font-family: 'DM-sans';
+    transition: 0.3s all ease; 
 }
-
+.sec-3-main-container button:hover{
+    background-color: #3C9581;
+    color: white;
+    border: 2px solid  #3C9581;
+}
 .sec-3-main-container img {
     margin: 30px;
     animation: move 4s infinite linear;
@@ -364,8 +372,10 @@ body {
 .sec-4-product-card {
     width: 20%;
     height: 100%;
-    border: .07px solid #cbcbcb94;
+    border-bottom: 1px solid #cbcbcba2;
+    border-top: 1px solid #cbcbcba2;
     gap: 20px;
+    border-left: 1px solid #cbcbcba2 ;
 }
 
 .sec-4-product-card>div:nth-child(2) {
@@ -389,9 +399,8 @@ body {
 }
 
 .sec-4-product-card del {
-    color: grey;
+    color: grey;    
     font-size: 16px;
-    text-decoration: none;
     font-weight: 100;
     font-family: 'LibreBaskerville';
 }
@@ -453,7 +462,7 @@ body {
 }
 
 .sec-5-product-price>div span {
-    font-family: 'circular';
+    font-family: 'DM-sans';
     color: grey;
     border: none;
 }
@@ -603,7 +612,7 @@ body {
 /* Section - 8 */
 .sec-8 {
     text-align: center;
-    gap: 20px;
+    gap: 18px;
     padding: 12% 0px 5% 0px;
 }
 
@@ -615,8 +624,8 @@ body {
 }
 
 .sec-8-p {
-    font-family: "icomoon-Font-family", Sans-serif;
-    font-size: 15px;
+    font-family: "DM-sans", Sans-serif;
+    font-size: 16px;
     line-height: 1.2em;
     color: rgb(73, 73, 73);
     margin: 15px 0px;
@@ -626,19 +635,18 @@ body {
     border: none;
     border-bottom: 1px solid;
     width: 48%;
+    outline: none;
     padding: 15px;
     font-size: 16px;
     color: grey;
 }
 
-
-
 /* Footer */
 .footer-first-container {
-    padding: 10% 5.6%;
+    padding: 9.1% 5.6%;
     display: flex;
     justify-content: space-between;
-    background: black;
+    background: #101010;
     color: white;
 }
 
@@ -649,14 +657,13 @@ body {
 
 .footer-first-container-first-div p {
     padding: 20px 0px;
-    font-family: 'LibreBaskerville';
+    font-family: 'DM-sans' , sans-serif ;
     font-size: 15px;
     line-height: 22px;
 }
 
 .footer-first-container-first-div h3 {
     color: #FFFFFF;
-    font-family: "LibreBaskerville", Sans-serif;
     font-size: 26px;
     font-weight: 400;
     font-style: italic;
@@ -684,7 +691,7 @@ body {
     line-height: 34px;
     color: grey;
     font-weight: bold;
-    font-family: 'circular';
+    font-family: 'DM-sans' ,  sans-serif ;
 }
 
 .footer-first-container-second-div {
@@ -698,8 +705,7 @@ body {
 .footer-first-container-second-div ul {
     list-style: none;
     gap: 20px;
-    font-family: 'LibreBaskerville';
-    font-style: italic;
+    font-family: 'DM-sans' ,  sans-serif ;
     font-size: 16px;
 }
 
@@ -718,14 +724,14 @@ body {
 
 .footer-first-container-third-div h3 {
     font-size: 22px;
-    font-family: 'italic-Font-family';
+    font-family: 'DM-sans' ,  sans-serif;
 }
 
 .footer-first-container-third-div p {
     font-size: 17px;
     width: 75%;
     line-height: 27px;
-    font-family: 'circular';
+    font-family: 'DM-sans' , sans-serif ;
 }
 
 .footer-first-container-third-div input {
@@ -776,6 +782,7 @@ body {
     background-color: #232323;
     border-radius: 50%;
 }
+
 /* mobile  */
 @media (max-width:767px) {
      .nav-ul , .ri-user-line , .ri-search-line{

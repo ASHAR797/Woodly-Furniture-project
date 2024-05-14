@@ -240,19 +240,20 @@ header {
 }
 
 .sec-2-icon-box-info {
-    gap: 20px;
+    gap: 15px;
     width: 70%;
 }
 
 .sec-2-icon-box-info h4 {
-    font-size: 23px;
+    font-size: 24px;
+    font-weight: 400;
     font-family: 'italic-Font-family';
 }
 
 .sec-2-icon-box-info p {
     font-size: 16px;
     line-height: 28px;
-    font-family: 'circular';
+    font-family: 'DM-sans', Arial, Helvetica, sans-serif;
     color: #5a605e;
 }
 
@@ -328,11 +329,15 @@ header {
     width: 100%;
 }
 
+.sec-4 .heading-span {
+    color: black;
+}
+
 .sec-4-ul {
     list-style: none;
     gap: 39px;
-    font-size: 19px;
-    font-family: 'circular';
+    font-size: 16px;
+    font-family: 'DM-sans', sans-serif;
     color: #505050;
 }
 
@@ -341,20 +346,28 @@ header {
     padding: 2px;
 }
 
+.sec-4-ul li:hover {
+    border-bottom: 2px solid;
+}
+
 .sec-4-first-container {
     gap: 55px;
 }
 
 .sec-4-first-container h2 {
-    color: #3C9581;
+    color: black;
     font-family: "LibreBaskerville", Sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 1.4em;
 }
 
+.sec-4-first-container h2>span {
+    color: #3C9581;
+}
+
 .sec-4-products-container {
-    width: 95%;
+    width: 81%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px 0px;
@@ -375,6 +388,10 @@ header {
 .sec-4-product>h3 {
     font-family: "LibreBaskerville";
     font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 17rem;
     line-height: 31px;
     color: black !important;
     font-weight: 100;
@@ -391,6 +408,7 @@ header {
 
 .sec-4-product ins {
     color: #3C9581;
+    text-decoration: none;
 }
 
 /* Section - 5 */
@@ -435,7 +453,7 @@ header {
 .sec-5-main-container button {
     font-size: 18px;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     color: white;
     background-color: #3C9581;
@@ -520,17 +538,17 @@ header {
 
 /* Footer */
 .footer-first-container {
-    padding: 5% 5.6%;
+    padding: 8.4% 5.6%;
     display: flex;
     justify-content: space-between;
     background: #101010;
     color: white;
-    margin: 10px 42px;
-    border-radius: 10px;
+    margin: 10px 41px;
+    border-radius: 18px;
 }
 
 .footer-first-container-first-div {
-    gap: 45px;
+    gap: 12px
 }
 
 .footer-first-container-first-div h3 {
@@ -543,11 +561,12 @@ header {
 }
 
 .footer-first-container-first-div h2 {
-    font-size: 42px;
-    font-family: 'circular';
-    font-weight: 100;
+    font-size: 36px;
+    font-family: 'DM-sans';
+    font-weight: 500;
     padding: 10px 0px;
     color: #3C9581;
+    line-height: 50px;
 }
 
 .footer-first-container-first-div img {
@@ -562,25 +581,34 @@ header {
     font-family: 'circular';
 }
 
+.footer-first-container-first-div>div:nth-child(1) {
+    margin-bottom: 32px;
+}
+
 .footer-first-container-second-div {
-    gap: 139px
+    gap: 120px
 }
 
 .footer-first-container-second-div h4 {
     font-size: 22px;
+    font-family: "LibreBaskerville", Sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .footer-first-container-second-div ul {
     list-style: none;
     gap: 20px;
-    font-family: 'LibreBaskerville';
-    font-style: italic;
+    font-family: 'DM-sans';
     font-size: 16px;
 }
 
-.footer-first-container-third-div,
+.footer-first-container-third-div {
+    gap: 40px;
+}
+
 .footer-first-container-third-div>div {
-    gap: 25px;
+    gap: 17px;
 }
 
 .footer-first-container-third-div {
@@ -609,6 +637,10 @@ header {
 
 .email-box {
     position: relative;
+}
+
+.footer-first-container-third-div input button:hover {
+    background-color: #318573;
 }
 
 .email-box input {
@@ -643,19 +675,26 @@ header {
     gap: 20px;
 }
 
+.social-media-links i:hover {
+    background-color: #3C9581;
+}
+
 .social-media-links i {
     padding: 10px;
+    transition: 0.3s ease-in;
     background-color: #232323;
     border-radius: 50%;
+    font-size: 16px;
 }
 
 .footer-second-container {
     text-align: center;
-    padding: 10px 0px;
-    font-size: 18px;
-    font-family: 'circular', sans-serif;
+    line-height: 16px;
+    color: #bebebe;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'DM-sans', sans-serif;
     background: #282828;
-    color: white;
 }
 
 @media (max-width:767px) {

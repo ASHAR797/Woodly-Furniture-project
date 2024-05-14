@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'icomoon-Font-family';
-    src: url(./assets/font-folder/icomoon.ttf);
+    font-family: 'DM-sans';
+    src: url(./assets/font-folder/DMSans_24pt-Regular.ttf);
 }
 
 @font-face {
@@ -26,7 +26,7 @@ body {
 
 .header {
     margin: 37px 58px;
-    border: 1.7px solid #3C9581;
+    border: 1.5px solid #3C9581;
     padding: 0px 0px 0px 15px;
     border-radius: 7px;
     background-color: transparent;
@@ -56,7 +56,7 @@ body {
     gap: 37px;
     list-style: none;
     font-size: 16px;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     font-weight: 100;
 }
 
@@ -79,7 +79,7 @@ nav li {
 .dropdown-content {
     position: absolute;
     top: 20px;
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     background-color: #f1f1f1;
     min-width: 240px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -128,7 +128,7 @@ nav a {
 }
 
 .nav-inner-cart-price {
-    font-family: 'icomoon-Font-family', sans-serif;
+    font-family: 'DM-sans', sans-serif;
     font-weight: 100;
 }
 
@@ -141,20 +141,21 @@ nav a {
     height: 23.45rem;
     background-color: #F3FCF8;
     padding-bottom: 77px;
-    gap: 19px;
+    gap: 17px;
 }
 
 .woodly-hero-container h1 {
-    font-size: 52px;
+    font-size: 40px;
     font-family: 'LibreBaskerville', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700 ;
 }
 
 .woodly-hero-container ul {
     display: flex;
     gap: 10px;
-    font-size: 16px;
+    font-size: 13px;
     list-style: none;
-    font-family: 'circular', Arial, Helvetica, sans-serif;
+    font-family: 'DM-sans', Arial, Helvetica, sans-serif;
     color: #656565;
 }
 
@@ -197,7 +198,7 @@ nav a {
 .sec-1-first-container p {
     font-size: 20px;
     color: #565656;
-    font-family: 'circular';
+    font-family: 'DM-sans';
     line-height: 30px;
     font-weight: 100;
 }
@@ -245,7 +246,7 @@ nav a {
 
 .sec-1-second-container-main>div p {
     font-size: 18px;
-    font-family: 'circular', Arial, Helvetica, sans-serif;
+    font-family: 'DM-sans', Arial, Helvetica, sans-serif;
     color: grey;
     line-height: 27px;
 }
@@ -262,7 +263,7 @@ nav a {
 
 /* Section - 3 */
 .sec-3 {
-    padding: 10% 0px;
+    padding: 9% 0px;
     text-align: center;
     background-image: url(./assets/img-folder/image-10-1.png);
     background-size: cover;
@@ -299,12 +300,19 @@ nav a {
     border: 2px solid white;
     background: transparent;
     color: white;
+    transition: 0.3s all ease;
+    border-radius: 3px;
 }
-
-/* Section - 4 */
+.sec-3 button:hover{
+    background-color: #3C9581;
+    color: white;
+    border: 2px solid #3C9581 ;
+}
+/* Section - 6 */
 .sec-4 {
     text-align: center;
     padding: 5% 0px;
+    background-color: #ffffff;
 }
 
 .sec-4 h2 {
@@ -315,12 +323,17 @@ nav a {
     margin: 11px 0px;
     color: #3C9581;
 }
-
+.sec-4-slider-main{
+ gap: 65px;
+ width: 65rem;
+}
+.sec-4-slider-main i{
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
 .sec-4 span {
-    color: #1F2826;
-    font-family: "italic-Font-family", Sans-serif;
-    font-size: 22px;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .sec-4 img {
@@ -344,27 +357,30 @@ nav a {
 }
 
 .silder-main-container h3 {
-    font-family: 'circular';
     margin: 10px;
+    font-family: 'DM-sans' , sans-serif ;
     color: #3C9581;
+    font-weight: 100 ;
 }
 
 .silder-main-container span {
-    font-family: 'circular';
+    font-family: 'DM-sans' , sans-serif ;
     font-weight: 100;
+    color: #1F2826 ;
 }
+
 
 /* Footer */
 .footer-first-container {
-    padding: 5% 5.6%;
+    padding: 8.4% 5.6%;
     display: flex;
     justify-content: space-between;
-    background: black;
+    background: #101010;
     color: white;
 }
 
 .footer-first-container-first-div {
-    gap: 45px;
+    gap: 12px
 }
 
 .footer-first-container-first-div h3 {
@@ -377,11 +393,12 @@ nav a {
 }
 
 .footer-first-container-first-div h2 {
-    font-size: 42px;
-    font-family: 'circular';
-    font-weight: 100;
+    font-size: 36px;
+    font-family: 'DM-sans';
+    font-weight: 500;
     padding: 10px 0px;
     color: #3C9581;
+    line-height: 50px;
 }
 
 .footer-first-container-first-div img {
@@ -395,26 +412,33 @@ nav a {
     font-weight: bold;
     font-family: 'circular';
 }
+.footer-first-container-first-div > div:nth-child(1){
+    margin-bottom: 32px;
+}
 
 .footer-first-container-second-div {
-    gap: 139px
+    gap: 120px
 }
 
 .footer-first-container-second-div h4 {
     font-size: 22px;
+    font-family:"LibreBaskerville", Sans-serif ;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .footer-first-container-second-div ul {
     list-style: none;
     gap: 20px;
-    font-family: 'LibreBaskerville';
-    font-style: italic;
+    font-family: 'DM-sans';
     font-size: 16px;
 }
 
-.footer-first-container-third-div,
+.footer-first-container-third-div{
+    gap: 40px ;
+}
 .footer-first-container-third-div>div {
-    gap: 25px;
+    gap: 17px;
 }
 
 .footer-first-container-third-div {
@@ -443,6 +467,9 @@ nav a {
 
 .email-box {
     position: relative;
+}
+.footer-first-container-third-div input button:hover{
+    background-color: #318573;
 }
 
 .email-box input {
@@ -476,20 +503,25 @@ nav a {
     margin-top: 15px;
     gap: 20px;
 }
-
+.social-media-links i:hover{
+    background-color:  #3C9581 ;
+}
 .social-media-links i {
     padding: 10px;
+    transition: 0.3s ease-in;
     background-color: #232323;
     border-radius: 50%;
+    font-size: 16px;
 }
 
 .footer-second-container {
     text-align: center;
-    padding: 10px 0px;
-    font-size: 18px;
-    font-family: 'circular', sans-serif;
+    line-height: 16px;
+    color: #bebebe ;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'DM-sans', sans-serif;
     background: #282828;
-    color: white;
 }
 
 @media (max-width:767px) {
@@ -529,7 +561,7 @@ nav a {
     }
 
     .nav-inner-cart-price {
-        font-family: 'icomoon-Font-family', sans-serif;
+        font-family: 'DM-sans', sans-serif;
         font-weight: 100;
         font-size: 14px;
     }
